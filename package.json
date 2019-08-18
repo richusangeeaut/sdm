@@ -2,18 +2,25 @@
   "name": "mern-todo-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10.3.0"
+  },
   "dependencies": {
     "bootstrap": "^4.3.1",
+<<<<<<< HEAD
+=======
+    "chai": "^3.2.0",
+    "chai-http": "^1.0.0",
+    "mocha": "^6.2.0",
+>>>>>>> 75c30ff93d12c0b25682c79f9a28716ead08f48b
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node backend/server",
+    "test": "mocha backend/test/test-server.js --exit"
   },
   "eslintConfig": {
     "extends": "react-app"
